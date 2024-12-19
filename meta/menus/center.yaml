@@ -1,0 +1,48 @@
+items:
+    -
+        title: 'Základní informace'
+        nesting: null
+        type: page
+        url: null
+        code: ''
+        reference: '2'
+        cmsPage: page
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Kvalita a bezpečí'
+        nesting: null
+        type: page
+        url: null
+        code: ''
+        reference: '3'
+        cmsPage: page
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Výroční zprávy'
+        type: page
+        code: ''
+        reference: '4'
+        cmsPage: page
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Veřejné zakázky'
+        type: page
+        code: ''
+        reference: '5'
+        cmsPage: page
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+name: 'O centru NP'

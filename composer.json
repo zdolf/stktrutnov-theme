@@ -1,0 +1,8 @@
+{
+    "name": "zdolf/stktrutnov-theme",
+    "type": "october-theme",
+    "description": "Theme for STK Trutnov.",
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}
