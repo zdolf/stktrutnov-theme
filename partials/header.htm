@@ -5,7 +5,7 @@
             <div class="d-flex align-items-center justify-content-between row row-cols-lg-3">
                 <div class="col col-lg-2 d-flex py-4">
                     <a href="{{ 'homepage'|page }}" class="d-flex align-items-center logo">
-                        <img src="{{ 'assets/images/logo.svg'|theme }}" alt="logo">
+                        <img src="{{ 'assets/images/logo.png'|theme }}" alt="logo">
                     </a>
                 </div>
 
@@ -14,23 +14,26 @@
                 </div>
 
                 <div class="col-lg-2 d-none d-xxl-flex align-items-center justify-content-end gap-4">
+                    <p class="m-0">
+                        <img src="{{ 'assets/images/logo-dekra.png'|theme }}" alt="logo">
+                    </p>
 {#                    <div class="search">#}
 {#                        <a href="" class="d-flex align-items-center">#}
 {#                            <i class="ph ph-magnifying-glass"></i>#}
 {#                        </a>#}
 {#                    </div>#}
 
-                    {% if this.theme.phone %}
-                        <div class="phone">
-                            <a href="tel: {{ this.theme.phone }}" target="_blank" class="d-inline-flex text-decoration-none align-items-center gap-2 link-info fs-3">
-                                <i class="ph ph-phone icon fs-2 text-black"></i>
+{#                    {% if this.theme.phone %}#}
+{#                        <div class="phone">#}
+{#                            <a href="tel: {{ this.theme.phone }}" target="_blank" class="d-inline-flex text-decoration-none align-items-center gap-2 link-info fs-3">#}
+{#                                <i class="ph ph-phone icon fs-2 text-black"></i>#}
 
-                                <span>
-                                    {{ this.theme.phone }}
-                                </span>
-                            </a>
-                        </div>
-                    {% endif %}
+{#                                <span>#}
+{#                                    {{ this.theme.phone }}#}
+{#                                </span>#}
+{#                            </a>#}
+{#                        </div>#}
+{#                    {% endif %}#}
 
 {#                    {% if this.theme.facebook or this.theme.instagram or this.theme.youtube %}#}
 {#                        <div class="socials d-inline-flex align-items-center gap-2 justify-content-end">#}
@@ -56,23 +59,23 @@
 {#                        </div>#}
 {#                    {% endif %}#}
 
-                    {% if sitepicker.isEnabled %}
-                        <ul class="nav nav-pills sitepicker">
-                            <li class="nav-item position-relative">
-                                <span class="nav-link d-flex align-items-center">
-                                    <img src="{{ ['assets/images/locales/', this.site.code, '.svg']|join|theme }}" alt="{{ this.site.code }}" class="me-2">
+{#                    {% if sitepicker.isEnabled %}#}
+{#                        <ul class="nav nav-pills sitepicker">#}
+{#                            <li class="nav-item position-relative">#}
+{#                                <span class="nav-link d-flex align-items-center">#}
+{#                                    <img src="{{ ['assets/images/locales/', this.site.code, '.svg']|join|theme }}" alt="{{ this.site.code }}" class="me-2">#}
 
-                                    {{ this.site.name }}
+{#                                    {{ this.site.name }}#}
 
-                                    <i class="ph ph-caret-down ms-1 sitepicker-toggler"></i>
-                                </span>
+{#                                    <i class="ph ph-caret-down ms-1 sitepicker-toggler"></i>#}
+{#                                </span>#}
 
-                                <div class="submenu">
-                                    {% component "sitepicker" %}
-                                </div>
-                            </li>
-                        </ul>
-                    {% endif %}
+{#                                <div class="submenu">#}
+{#                                    {% component "sitepicker" %}#}
+{#                                </div>#}
+{#                            </li>#}
+{#                        </ul>#}
+{#                    {% endif %}#}
                 </div>
 
                 <div class="col text-end d-xxl-none">

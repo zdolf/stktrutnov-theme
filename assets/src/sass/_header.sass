@@ -15,6 +15,12 @@ header
 
                 & > a, & > span
                     position: relative
+                    display: block
+                    align-content: center
+                    height: 100%
+                    padding-left: $nav-level-1-link-padding-x
+                    padding-right: $nav-level-1-link-padding-x
+                    text-decoration: none
 
                     &:after
                         content: ""
@@ -24,9 +30,12 @@ header
                         width: 0
                         height: $nav-link-after-height
                         transition: $transition-base
-                        background-color: $nav-link-hover-color
+                        background-color: $red
 
                     &:hover
+                        color: $nav-link-hover-color
+                        background-color: $nav-link-hover-bg
+
                         &:after
                             width: 100%
 
@@ -158,15 +167,21 @@ header
                                                 & > span
                                                     cursor: default
 
+    .phone
+        a
+            font-size: $header-phone-icon-font-size
+
     .socials
         a
+            font-size: $header-socials-icon-font-size
+
             .icon
-                background-color: $header-socials-icon-color
+                background-color: transparent
                 transition: $transition-base
 
             &:hover
                 .icon
-                    background-color: $header-socials-icon-hover-color
+                    background-color: transparent
 
     .search
         a

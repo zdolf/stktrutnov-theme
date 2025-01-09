@@ -1,6 +1,29 @@
 items:
     -
-        title: 'O centru NP'
+        title: Úvod
+        nesting: null
+        type: cms-page
+        url: null
+        code: ''
+        reference: homepage
+        cmsPage: null
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'O nás'
+        type: page
+        code: ''
+        reference: '1'
+        cmsPage: page
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Naše služby'
         type: page
         code: ''
         reference: '2'
@@ -10,79 +33,31 @@ items:
             cssClass: ''
             isExternal: '0'
     -
-        title: 'Lůžka NP'
-        nesting: null
-        type: header
-        url: null
+        title: 'Potřebné doklady'
+        type: page
         code: ''
-        reference: null
-        cmsPage: null
-        replace: null
+        reference: '3'
+        cmsPage: page
         viewBag:
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
     -
-        title: Ambulance
-        nesting: null
-        type: header
-        url: null
+        title: Ceník
+        type: page
         code: ''
-        reference: null
-        cmsPage: null
-        replace: null
-        viewBag:
-            isHidden: '0'
-            cssClass: ''
-            isExternal: '0'
-    -
-        title: Laboratoř
-        nesting: null
-        type: header
-        url: null
-        code: ''
-        reference: null
-        cmsPage: null
-        replace: null
-        viewBag:
-            isHidden: '0'
-            cssClass: ''
-            isExternal: '0'
-    -
-        title: 'Sociální služby'
-        nesting: null
-        type: header
-        url: null
-        code: ''
-        reference: null
-        cmsPage: null
-        replace: null
+        reference: '4'
+        cmsPage: page
         viewBag:
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
     -
         title: Kontakt
-        nesting: null
-        type: header
-        url: null
+        type: page
         code: ''
-        reference: null
-        cmsPage: null
-        replace: null
-        viewBag:
-            isHidden: '0'
-            cssClass: ''
-            isExternal: '0'
-    -
-        title: 'Volná místa'
-        nesting: null
-        type: header
-        url: null
-        code: ''
-        reference: null
-        cmsPage: null
-        replace: null
+        reference: '5'
+        cmsPage: page
         viewBag:
             isHidden: '0'
             cssClass: ''
