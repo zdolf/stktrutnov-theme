@@ -19,45 +19,57 @@ items:
         reference: '1'
         cmsPage: page
         viewBag:
-            isHidden: '0'
+            isHidden: '1'
             cssClass: ''
             isExternal: '0'
     -
         title: 'Naše služby'
+        nesting: null
         type: page
+        url: null
         code: ''
         reference: '2'
         cmsPage: page
+        replace: null
         viewBag:
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
     -
         title: 'Potřebné doklady'
+        nesting: null
         type: page
+        url: null
         code: ''
         reference: '3'
         cmsPage: page
+        replace: null
         viewBag:
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
     -
         title: Ceník
+        nesting: null
         type: page
+        url: null
         code: ''
         reference: '4'
         cmsPage: page
+        replace: null
         viewBag:
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
     -
         title: Kontakt
+        nesting: null
         type: page
+        url: null
         code: ''
         reference: '5'
         cmsPage: page
+        replace: null
         viewBag:
             isHidden: '0'
             cssClass: ''

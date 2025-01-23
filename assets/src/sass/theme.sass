@@ -9,6 +9,7 @@
 @import "sidebar"
 @import "breadcrumbs"
 @import "contact"
+@import "quick-news"
 
 header
     .nav
@@ -65,6 +66,18 @@ header
 .dropdown-toggle
     &:after
         content: none
+
+.block-vehicles, .block-what_you_need
+    background-color: $gray-100
+    padding-top: $grid-gutter-width !important
+    padding-bottom: $grid-gutter-width !important
+    margin-top: $grid-gutter-width !important
+
+    img
+        max-height: 130px
+        max-width: 130px
+        display: flex
+        margin: auto
 
 #about-us
     h2

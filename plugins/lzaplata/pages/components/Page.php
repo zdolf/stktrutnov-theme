@@ -81,7 +81,7 @@ class Page extends ComponentBase
             $this->id = $page->slug;
             $this->title = $page->title;
             $this->slug = $page->slug;
-            $this->contents = $page->contents;
+            $this->contents = $page->contents->where("is_published", true)->sortBy("sort_order");
             $this->menu = $page->menu;
         }
     }

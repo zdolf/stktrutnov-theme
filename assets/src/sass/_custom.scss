@@ -1,4 +1,5 @@
-@import "font";
+//@import "font";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "~bootstrap/scss/functions";
@@ -55,7 +56,7 @@ $line-height-base:                      1.5;
 
 $headings-font-family:                  $font-family-base;
 $headings-font-weight:                  $font-weight-bold;
-$headings-color:                        $black;
+$headings-color:                        $primary;
 
 $header-bg:                             $primary;
 $header-border-color:                   $gray-300;
@@ -154,7 +155,7 @@ $card-border-width:                     0;
 $card-border-radius:                    $border-radius;
 
 $offcanvas-toggler-font-size:           $font-size-sm;
-$offcanvas-toggler-color:               $black;
+$offcanvas-toggler-color:               $white;
 $offcanvas-toggler-icon-font-size:      $h2-font-size;
 $offcanvas-toggler-close-color:         $white;
 $offcanvas-bg-color:                    $primary;
@@ -188,6 +189,8 @@ $slider-pagination-inactive-width:      20px;
 $slider-pagination-height:              5px;
 $slider-pagination-border-radius:       10px;
 
+$quick-news-bg:                         $red-500;
+
 $btn-border-radius:                     $border-radius-sm;
 $btn-border-width:                      1.5px;
 $btn-font-weight:                       $font-weight-semibold;
@@ -215,15 +218,15 @@ $badge-padding-y:                       6px;
 $badge-border-radius:                   30px;
 
 $footer-font-size:                      $font-size-sm;
-$footer-color:                          $primary;
-$footer-bg:                             $white;
+$footer-color:                          $white;
+$footer-bg:                             $green-700;
 
-$footer-logo-bg:                        $primary;
+$footer-logo-bg:                        $white;
 $footer-logo-hover-bg:                  $primary;
 
 $footer-contact-font-size:              map-get($font-sizes, 4);
-$footer-contact-link-color:             $gray-500;
-$footer-contact-link-hover-color:       $primary;
+$footer-contact-link-color:             $white;
+$footer-contact-link-hover-color:       $white;
 $footer-contact-link-underline-height:  1px;        // 0 for turn off
 $footer-contact-link-underline-color:   $footer-contact-link-color;
 $footer-contact-phone-font-size:        $footer-contact-font-size;
@@ -231,9 +234,9 @@ $footer-contact-email-font-size:        $footer-contact-phone-font-size;
 
 $footer-toggler-color:                  $primary;
 
-$footer-bottom-bg:                      $footer-bg;
+$footer-bottom-bg:                      $white;
 $footer-bottom-font-size:               $footer-font-size;
-$footer-bottom-color:                   $footer-color;
+$footer-bottom-color:                   $black;
 
 $footer-socials-icon-color:             $primary;
 $footer-socials-icon-hover-color:       $gray-500;
@@ -254,7 +257,7 @@ $footer-nav-link-before-content:        "▪";        // none for turn off
 $footer-nav-link-before-color:          $primary;
 $footer-nav-link-before-top:            2px;
 
-$footer-heading-color:                  $headings-color;
+$footer-heading-color:                  $white;
 $footer-heading-font-weight:            $font-weight-medium;
 $footer-heading-font-size:              $h3-font-size;
 
@@ -384,6 +387,7 @@ $files-link-hover-underline-color:                  $files-link-hover-color;
 @import "~bootstrap/scss/modal";
 @import "~bootstrap/scss/tables";
 @import "~bootstrap/scss/breadcrumb";
+@import "~bootstrap/scss/alert";
 
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import "~bootstrap/scss/utilities/api";
@@ -448,9 +452,9 @@ $files-link-hover-underline-color:                  $files-link-hover-color;
 
 .btn {
     &.btn-primary {
-        --bs-btn-hover-color: #{$black};
-        --bs-btn-hover-bg: transparent;
-        --bs-btn-hover-border-color: #{$red-100};
+        --bs-btn-hover-color: #{$white};
+        --bs-btn-hover-bg: #{$green-700};
+        --bs-btn-hover-border-color: #{$primary};
     }
 
     &.btn-outline-light {

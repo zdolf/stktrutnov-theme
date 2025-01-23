@@ -4,3 +4,20 @@ v1.0.1:
 v1.0.2:
     - 'Multisite support'
     - add_multisite_columns.php
+v1.0.3:
+    - 'Content reorder and visibility'
+    - add_content_reorder_and_visibility.php
+v1.0.4:
+    - 'Add pricelist as content type option'
+    - add_pricelist_column.php
+v1.0.5:
+    - 'Privileges update'
+v1.0.6:
+    - 'Opening hours as new content'
+    - add_opening_hours_column.php
+v1.0.7:
+    - 'Slider as new content'
+    - add_slider_column.php
+v1.1.0:
+    - 'Homepage builder'
+    - builder_table_create_lzaplata_pages_blocks.php

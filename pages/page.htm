@@ -29,6 +29,12 @@ postPage = "page-post"
 
 [Files files]
 order = "position asc"
+
+[pricelist]
+
+[openinghours]
+
+[pricelist pricelist_emise]
 ==
 <?php
 function onEnd()
@@ -50,17 +56,17 @@ function onEnd()
 }
 ?>
 ==
+{#
 <div class="container-fluid mt-4">
     <div class="container-lg">
         <div class="row g-5">
-            <div class="d-none d-xl-block col-xl-3"></div>
-
-            <div class="col col-xl-9">
+            <div class="col {% if leftmenu.menuItems is not null %}col-xl-9 offset-xl-3{% endif %}">
                 {% component "breadcrumbs" %}
             </div>
         </div>
     </div>
 </div>
+#}
 
 <div class="container-fluid py-5 border-1 border-bottom border-light" id="page">
     <div class="container-lg">
@@ -95,8 +101,18 @@ function onEnd()
                                 {% component "gallery" gallery=content.gallery.slug %}
                             {% elseif content.type == "files" %}
                                 {% component "files" category=content.files_category.slug %}
+                            {% elseif content.type == "pricelist" %}
+                                {% if content.pricelist.slug == "mereni-emisi" %}
+                                        {% component "pricelist_emise" slug=content.pricelist.slug %}
+                                    {% else %}
+                                        {% component "pricelist" slug=content.pricelist.slug %}
+                                    {% endif %}
+                            {% elseif content.type == "opening_hours" %}
+                                {% component "openinghours" slug=content.opening_hours.slug %}
                             {% elseif content.type == "faq" %}
                                 {% partial "_accordion/faq" items=faq %}
+                            {% elseif content.type == "slider" %}
+                                {% partial "_swiper/slider" slides=content.slider.slides settings=content.slider %}
                             {% elseif content.type == "cookies" %}
                                 {% component "cookiesmanage" %}
                             {% elseif content.type == "contacts" %}

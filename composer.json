@@ -3,6 +3,13 @@
     "type": "october-theme",
     "description": "Theme for STK Trutnov.",
     "require": {
-        "composer/installers": "~1.0"
+        "composer/installers": "~1.0",
+        "twig/intl-extra": "^3.18",
+        "twig/extra-bundle": "^3.18"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
     }
 }
